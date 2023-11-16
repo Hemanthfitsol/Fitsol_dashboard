@@ -33,27 +33,29 @@ const Header = (props) => {
       </div>
       <div className="absolute inset-0 mt-28  text-white">
         <div className="container max-w-full grid  grid-cols-4  gap-2 my-6 px-8 py-8">
-          <h1 className="row-span-1 col-span-4  lg:col-span-3 lg:mx-0 text-2xl md:text-4xl lg:text-5xl font-extrabold text-heading font-serif ">
+          <h1 className="col-span-4  lg:col-span-3 lg:mx-0 text-2xl md:text-4xl lg:text-5xl font-extrabold text-heading font-serif ">
             {props.title}
           </h1>
-          <div className="row-span-1 col-span-4  lg:col-span-3 lg:mx-0 underline w-16 h-1 bg-white mt-2 mb-2"></div>
-          <p className="row-span-1 col-span-4  lg:col-span-3 lg:mx-0 text-base md:text-lg lg:text-xl text-secondary font-poppins">
+          <div className="col-span-4  lg:col-span-3 lg:mx-0 underline w-16 h-1 bg-white mt-2 mb-2"></div>
+          <p className="col-span-4  lg:col-span-3 lg:mx-0 text-base md:text-lg lg:text-xl text-secondary font-poppins">
             {props.desc}
           </p>
           {/* <div className="col-span-4 lg:mx-0  lg:col-span-3 mt-4"> */}
-            {props.button !== null && (
-              <div className="row-span-1 col-span-4 lg:col-span-2 mt-4 flex items-center justify-center bg-primary px-4 rounded-2xl">
-                <div className="py-3">
+          {props.button !== null && (
+            <div className="col-span-4 lg:col-span-2 mt-4 flex items-center ">
+              <div className="py-4 flex items-center bg-primary rounded-2xl px-4">
+                <div>
                   <a
                     href="#"
-                    className="col-span-4 lg:col-span-1 lg:mx-0 text-xs md:text-lg lg:text-xl  px-4   text-hemanth  rounded-2xl font-semibold  font-poppins "
+                    className="lg:mx-0 text-xs md:text-lg lg:text-xl  px-4   text-hemanth  font-semibold  font-poppins "
                   >
                     {props.button}
                   </a>
                 </div>
                 <div className="">{icon}</div>
               </div>
-            )}
+            </div>
+          )}
           {/* </div> */}
         </div>
       </div>

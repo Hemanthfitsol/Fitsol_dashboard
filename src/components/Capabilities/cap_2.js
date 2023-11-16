@@ -2,7 +2,7 @@ import React from "react";
 import Section from "../Reusable_Components/Section";
 const cap_2 = () => {
   return (
-    <div className="py-20">
+    <div className="mt-20">
       <Section
         title="PRODUCTS AND CAPABILITIES"
         head=" Your data-driven path to decarbonisation"

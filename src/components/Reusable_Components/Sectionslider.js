@@ -41,8 +41,8 @@ const Section3 = (props) => {
             </p>
             {/* <div className="col-span-4 lg:mx-0  lg:col-span-4 mt-2"> */}
               {props.button !== null && (
-                <div className="col-span-4 lg:col-span-4 flex items-center justify-center bg-primary px-4 rounded-2xl">
-                  <div className="py-3">
+                <div className="col-span-4 mr-20 lg:col-span-4 flex items-center justify-center bg-primary px-4 rounded-2xl">
+                  <div className="py-3 ">
                     <a
                       href="#"
                       className="col-span-4 lg:mx-0 text-xs md:text-lg lg:text-xl  px-4   text-hemanth  rounded-2xl font-semibold  font-poppins "

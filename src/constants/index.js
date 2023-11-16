@@ -162,10 +162,22 @@ export const Capcontent = [
     button: "Measure your carbon footprint",
   },
   {
-    title: "COLLECT",
-    head: "1. Heading comes here in 2 lines -Lorem ipsum dolor sit amet",
-    desc: "Streamline your emissions data collection with bulk upload capabilities and assisted data input. Our solution assures uncompromised data accuracy and complete transparency, saving your valuable time and enhancing your environmental stewardship.",
-    button: "Automate your data collection",
+    title: "REPORT",
+    head: "3. Comply with carbon & ESG reporting",
+    desc: "Set science-based targets and break them down into manageable objectives for different scopes, geography, or business units. Map out your decarbonisation journey with our expert support, and define your reduction targets to meet your net-zero goals.",
+    button: "Report on sustainability",
+  },
+  {
+    title: "SET TARGETS",
+    head: "4. Set decarbonisation targets aligned with science",
+    desc: "Set science-based targets and break them down into manageable objectives for different scopes, geography, or business units. Map out your decarbonisation journey with our expert support, and define your reduction targets to meet your net-zero goals.",
+    button: "Set decarbonisation targets",
+  },
+  {
+    title: "REDUCE",
+    head: "5. Build a net-zero roadmap tailored to your business",
+    desc: "Harness real-time data and valuable insights to adjust your company’s decarbonisation strategy. Select and prioritise the actions with the highest reduction potential to achieve your targets and to actively reduce emissions across your value chain.",
+    button: "Reduce your emissions to net-zero",
   },
 ];
 

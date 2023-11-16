@@ -9,7 +9,7 @@ const icon = (
   >
     <path
       d="M0 10.59L4.58 6L0 1.41L1.41 0L7.41 6L1.41 12L0 10.59Z"
-      fill="#060DBF"
+      fill="#62C941"
     />
   </svg>
 );
@@ -25,22 +25,27 @@ const Section = (props) => {
       <div className="col-span-3 lg:col-span-2 lg:mx-0 underline w-16 h-1 bg-primary mt-2 mb-2"></div>
       {props.desc !== null && (
         <div className="col-span-3 lg:mx-0  lg:col-span-2 mt-2">
-          <p style={{wordSpacing:"2px"}}className="col-span-3 lg:col-span-2 lg:mx-0 md:text-lg lg:text-xl text-col9 font-poppins">
+          <p
+            style={{ wordSpacing: "2px" }}
+            className="col-span-3 lg:col-span-2 lg:mx-0 md:text-lg lg:text-xl text-col9 font-poppins"
+          >
             {props.desc}
           </p>
         </div>
       )}
       {props.button !== null && (
-          <div className="col-span-3 lg:mx-0 lg:col-span-2 mt-4 flex items-center justify-center bg-primary px-4 rounded-2xl">
-            <div className="py-3">
+        <div className="col-span-3 lg:col-span-2 lg:mx-0 mt-4 flex items-center ">
+          <div className="py-4 flex items-center bg-primary rounded-2xl px-4">
+            <div>
               <a
                 href="#"
-                className="col-span-4 lg:col-span-1 lg:mx-0 text-xs md:text-lg lg:text-xl  px-4   text-hemanth  rounded-2xl font-semibold  font-poppins "
+                className="lg:mx-0 text-xs md:text-lg lg:text-xl  px-4   text-hemanth  font-semibold  font-poppins "
               >
                 {props.button}
               </a>
             </div>
-            <div className="">{icon}</div>
+            <div className="pt-1">{icon}</div>
+          </div>
         </div>
       )}
     </div>

@@ -22,7 +22,7 @@ const icon = (
 );
 const Section = (props) => {
   return (
-    <div className="flex-col w-full flex-shrink gap-2 px-8 py-8">
+    <div className="flex-col w-full flex-shrink gap-2 px-4 py-8">
       <div className="">
         <h2 className="lg:mx-0 h-auto tracking-[8px] text-xs md:text-sm lg:text-lg text-col9 font-poppins mb-2">
           {props.title}
@@ -33,30 +33,32 @@ const Section = (props) => {
           {props.head}
         </h1>
       </div>
-      <div className="lg:mx-0 underline h-0.5 bg-black mt-2 "></div>
+      <div className="lg:mx-0 underline h-0.5 bg-pothu mt-2 "></div>
       {props.desc !== null && (
-        <div className="container grid grid-rows-2">
-        <div className="lg:mx-0 mt-2 row-span-2 ">
-          <p className="lg:col-span-2 lg:mx-0 md:text-lg lg:text-xl text-col9 font-poppins">
-            {props.desc}
-          </p>
+        <div className="container lg:h-20">
+          <div className="lg:mx-0 mt-2">
+            <p className="lg:col-span-2 lg:mx-0 md:text-lg lg:text-xl text-col9 font-poppins">
+              {props.desc}
+            </p>
+          </div>
         </div>
-         </div>
       )}
       {props.button !== null && (
         <div className="container grid grid-cols-3">
-        <div className="lg:mx-0 col-span-3 md:col-span-2 lg:col-span-1  mt-2 flex items-center justify-center bg-primary px-4 rounded-2xl">
-          <div className="py-3">
-            <a
-              href="#"
-              className="col-span-4 lg:col-span-1 lg:mx-0 text-xs md:text-lg lg:text-xl  px-4   text-hemanth  rounded-2xl font-semibold  font-poppins "
-            >
-              {props.button}
-            </a>
+          <div className="lg:mx-0 col-span-3 md:col-span-3 lg:col-span-2  mt-2 flex items-center">
+            <div className="py-4 flex bg-primary rounded-2xl lg:px-4">
+              <div>
+                <a
+                  href="#"
+                  className="lg:mx-0 text-xs md:text-lg lg:text-xl  px-4   text-hemanth  font-semibold  font-poppins "
+                >
+                  {props.button}
+                </a>
+              </div>
+              <div className="pt-1">{icon}</div>
+            </div>
           </div>
-          <div className="">{icon}</div>
         </div>
-          </div>
       )}
     </div>
   );
